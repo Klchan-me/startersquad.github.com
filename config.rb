@@ -24,6 +24,7 @@ set :haml, {
 #
 
 activate :deploy do |deploy|
+  deploy.branch = 'master'
   deploy.clean  = true
   deploy.method = :git
 end
