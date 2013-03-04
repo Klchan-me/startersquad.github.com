@@ -1,0 +1,19 @@
+---
+layout: false
+---
+
+!!! 5
+%html.no-js{style: 'height: 100%'}
+  %head
+    %meta{:charset => 'utf-8'}
+    %meta{'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge,chrome=1'}
+    %title StarterSquad
+    %link{href: "/stylesheets/style.css", rel:"stylesheet"}
+  %body{style: 'background: #f7f7f7; height: 100%'}
+    .center
+      .center-inner
+        = image_tag('comming-soon.png', usemap: '#comming-soon-map')
+%map{id: 'comming-soon-map', map: 'comming-soon-map'}
+  %area{shape: 'rect', coords: '527,667,579,719', href: '//coderwall.com/team/startersquad'}
+  %area{shape: 'rect', coords: '614,666,666,718', href: '//twitter.com/StarterSquad'}
+  %area{shape: 'rect', coords: '696,665,748,717', href: '//github.com/StarterSquad'}
